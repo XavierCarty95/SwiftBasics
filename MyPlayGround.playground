@@ -43,10 +43,12 @@ func sumOfThreeNumbers(firstNum: Int, secondNum: Int, thirdNum: Int) -> Int {
 /// divisible by 3 or 5 but not both
 func fizzBuzz(num: Int) -> Bool {
     
-    if (num % 5 == 0 && num % 3 == 0){
-        return true;
+    if (num % 5 == 0 && num % 3 == 0) {
+        return false
+    } else if (num % 5 == 0 || num % 3 == 0) {
+        return true
     } else {
-        return false;
+        return false
     }
 }
 
